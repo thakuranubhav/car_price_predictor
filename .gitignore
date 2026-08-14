@@ -1,0 +1,68 @@
+# Byte-compiled / optimized / Python cache files
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+
+car_env/
+
+# Virtual Environments
+venv/
+.venv/
+env/
+ENV/
+env.bak/
+venv.bak/
+
+# Environment Variables & Secrets
+.env
+.env.*
+!.env.example
+
+# ML Datasets (prevents committing large CSV/Excel files)
+data/
+*.csv
+*.tsv
+*.parquet
+*.feather
+*.h5
+*.xlsx
+*.xls
+
+# ML Models & Serialized Artifacts (pickles, weights, encoders)
+# (Uncomment the '!' exceptions below if you want to track a small deployed model)
+models/
+artifacts/
+*.pkl
+*.pickle
+*.joblib
+*.onnx
+*.pt
+*.pth
+*.bin
+*.h5
+# !models/car_price_model.joblib
+
+# Jupyter Notebook checkpoints & outputs
+.ipynb_checkpoints
+*/.ipynb_checkpoints/*
+
+# IDEs, Editors, & OS Files
+.vscode/
+.idea/
+*.sublime-project
+*.sublime-workspace
+.DS_Store
+Thumbs.db
+
+# Logs & Monitoring
+*.log
+logs/
+.pytest_cache/
+.coverage
+htmlcov/
+
+# Build & Packaging
+build/
+dist/
+*.egg-info/
