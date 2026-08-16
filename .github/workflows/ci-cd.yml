@@ -11,6 +11,7 @@ on:
 
 permissions:
   contents: read
+  id-token: write
 
 jobs:
 
@@ -67,10 +68,6 @@ jobs:
     name: Test AWS Authentication
     needs: docker-build
     runs-on: ubuntu-latest
-
-    permissions:
-      contents: read
-      id-token: write
 
     steps:
 
