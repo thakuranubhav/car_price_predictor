@@ -1,6 +1,12 @@
 from datetime import datetime, timezone, timedelta
 from jose import jwt, JWTError
+from fastapi.security import APIKeyHeader, HTTPBearer
+
 from app.core.config import settings
+
+
+api_key_scheme = APIKeyHeader(name="x-api-key", auto_error=False)
+bearer_scheme = HTTPBearer(auto_error=False)
 
 def create_token(data:dict, expire_minutes=30):
     to_encode=data.copy()

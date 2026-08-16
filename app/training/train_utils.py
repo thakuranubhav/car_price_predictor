@@ -1,13 +1,14 @@
-import os
+from pathlib import Path
 
-TRAINING_DIR = os.path.dirname(os.path.abspath(__file__))
-APP_DIR = os.path.dirname(TRAINING_DIR)
 
-DATA_DIR = os.path.join(APP_DIR, "data")
-DATA_FILE_NAME = "car-details.csv"
-DATA_FILE_PATH = os.path.join(DATA_DIR, DATA_FILE_NAME)
+CURRENT_FILE_DIR = Path(__file__).resolve().parent
 
-MODEL_DIR_NAME = "models"
-MODEL_NAME = "model.joblib"
-MODEL_DIR = os.path.join(APP_DIR, MODEL_DIR_NAME)
-MODEL_PATH = os.path.join(MODEL_DIR, MODEL_NAME)
+
+APP_DIR = CURRENT_FILE_DIR.parent
+
+DATA_DIR = APP_DIR / "data"
+DATA_FILE_PATH = DATA_DIR / "car-details.csv"
+
+MODEL_DIR = APP_DIR / "models"
+MODEL_NAME = "model.joblib"  # Change to "model.pkl" if your model is a .pkl file
+MODEL_PATH = MODEL_DIR / MODEL_NAME
