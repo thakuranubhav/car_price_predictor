@@ -8,5 +8,6 @@ pandas
 scikit-learn
 joblib
 redis
+pytest
 python-jose[cryptography]
 prometheus_fastapi_instrumentator
