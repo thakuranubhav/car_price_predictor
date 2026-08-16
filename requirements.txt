@@ -3,3 +3,9 @@ uvicorn
 dotenv
 PyJWT
 pydantic
+numpy
+pandas
+scikit-learn
+joblib
+redis
+prometheus_fastapi_instrumentator

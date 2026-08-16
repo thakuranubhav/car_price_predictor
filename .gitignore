@@ -5,6 +5,7 @@ __pycache__/
 *.so
 
 car_env/
+base_car/
 
 # Virtual Environments
 venv/
