@@ -9,5 +9,6 @@ scikit-learn
 joblib
 redis
 pytest
+httpx2
 python-jose[cryptography]
 prometheus_fastapi_instrumentator
